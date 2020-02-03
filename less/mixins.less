@@ -1,1 +1,20 @@
 // Mixins Styles
+
+.customButton(@bg-color:#FFBF27, @width:200px, @font-color:black){
+    background-color: @bg-color;
+    cursor: pointer;
+    text-align: center;
+    width: @width;
+    padding: 1%; 
+    border-radius: 10px;
+    color:@font-color;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        background-color: gold;
+        color: black;
+        transition-duration: 0.3s;
+    }
+}

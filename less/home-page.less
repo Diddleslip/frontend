@@ -1,10 +1,78 @@
 // Home Page Styles
 
 main {
-    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
 
     img {
-        width: 100%;
+        background-image: url("/img/kidsSmiling.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        width: 100vw;
+        margin-bottom: -10%;
+    }
+
+    .hookP {
+        position: absolute;
+        margin-top: 7%;
+        margin-left: -90%;
+        font-size: 2.5vw;
+        width: 30%;
+        background: white;
+        opacity: .9;
+        color: orange;
+        text-size-adjust: auto;
+        padding: 1%;
 
     }
+
+    #joinUs {
+        margin-top: 20%;
+        font-size: 3vw;
+        color: floralwhite;
+        border-radius: 5px;
+        width: 20%;
+        margin-left: -90%;
+
+        .customButton(@bg-color: #a8c839; @width: 30%; @font-color: white;)
+    }
 }//closes main
+
+.getSetup {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 3%;
+    padding: 3%;
+    border: 1px solid black;
+    align-items: center;
+    background-color:#fcb614;
+    opacity: .9;
+    margin-bottom: 100%;
+
+    h1 {
+        margin: 1% 0%;
+        font-size: 2vw;
+        color: black;
+        border-bottom: 1px solid black;
+        width: 25%;
+    }
+
+    p {
+        margin: 1% auto;
+        font-size: 1.2vw;
+    }
+
+}//closes .getSetup
+
+.backgroundImage {
+    background-image: url(/img/babyInBack.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 40vw;
+    margin-bottom: -3%;
+}
+
+#whyUs {
+    padding-top: 10%;
+}
