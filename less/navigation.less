@@ -1,0 +1,81 @@
+// Navigation Styles
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 2rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+
+    img {
+        width: 7vw;
+        margin-right: 13vw;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30vw;
+        margin-top: .5%;
+
+        a {
+            color: black;
+            text-decoration: none;
+            white-space: nowrap;
+            width: auto;
+            border-bottom: 1px solid gray;
+            padding-bottom: .7%;
+
+            &:hover {
+                color: #fcc915;
+                border-bottom: 1px solid black;
+            }
+        }
+    }//closes nav
+
+    .loginSignUp {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 20vw;
+        font-weight: bold;
+        text-decoration: none;
+
+        #loginButton {
+            text-decoration: none;
+            color: #a8c839;
+            width: 20%;
+            padding: 2%;
+            white-space: nowrap;
+            border-radius: 2px;
+            border: 1px solid black;
+
+
+            &:hover {
+                color: #57691c;
+                background-color: lightgray;
+            }
+        }//closes #loginButton     
+        
+        #signupButton {
+            background-color: #a8c839;
+            padding: 2%;
+            text-decoration: none;
+            margin-left: 10%;
+            white-space: nowrap;
+            color: white;
+            border-radius: 2px;
+
+            &:hover {
+                color: black;
+                background-color: #fcc915; 
+            }
+        }//closes #signupButton
+    }//closes .loginSignUp
+}//closes .navDiv
