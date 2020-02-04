@@ -273,6 +273,12 @@ main #joinUs:hover {
   height: 35vw;
   margin-bottom: 5%;
 }
+.testimonials {
+  font-size: 4vw;
+  margin: 5% 35vw;
+  padding-bottom: 1%;
+  border-bottom: 5px solid gold;
+}
 .quotes {
   display: flex;
   justify-content: space-between;
@@ -300,6 +306,12 @@ main #joinUs:hover {
 .quotes div p {
   color: black;
   margin: 3%;
+  font-size: 1vw;
+}
+.contactUs {
+  margin-top: 10%;
+  color: gold;
+  font-size: 3vw;
 }
 header {
   display: flex;
@@ -361,7 +373,7 @@ header .loginSignUp #loginButton {
   border: 1px solid black;
 }
 header .loginSignUp #loginButton:hover {
-  color: lightblue;
+  color: gold;
   transition-duration: 0.3s;
 }
 header .loginSignUp #signupButton {
@@ -403,6 +415,9 @@ header .loginSignUp #signupButton:hover {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+.form-cont textarea {
+  height: 200px;
 }
 .form-cont input[type=submit]:hover {
   background-color: lightblue;

@@ -12,6 +12,8 @@
     <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
     <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
     <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    
+
     <!-- amCharts javascript code -->
     <script type="text/javascript">
         AmCharts.makeChart("chartdiv",
@@ -23,7 +25,7 @@
                 "depth3D": 30,
                 "plotAreaFillAlphas": 1,
                 "startDuration": 1,
-                "color": "#2A2AD1",
+                "color": "#292929",
                 "fontFamily": "Arial Black",
                 "fontSize": 15,
                 "handDrawThickness": 0,
@@ -36,8 +38,9 @@
                     {
                         "balloonText": "[[title]] of [[category]]:[[value]]",
                         "fillAlphas": 1,
-                        "fillColors": "#FFA500",
+                        "fillColors": "#FFD700",
                         "id": "AmGraph-1",
+                        "lineColor": "#000000",
                         "title": "Groups per category",
                         "type": "column",
                         "valueField": "column-1"
@@ -88,8 +91,7 @@
                 ]
             }
         );
-    </script> 
-</head>
+    </script>
 <body>
     <header>
         <a href="#"><img src="img/logo-project.png" alt="Logo of the foundation"></a>
@@ -155,17 +157,19 @@
 
     <div class="backgroundImage img3"></div>
 
-
     <div id="chartdiv"></div>
 
     <div class="spaceFiller2"></div>  
 
     <div class="backgroundImage img4"></div>
 
+    <div class="testimonials">Testimonials</div>
+
     <section class="quotes">
         <div>
             <img src="img/faceShot1.jpg" alt="Face shot of a testimony"> 
             <h2>Niko Travers</h2>
+            <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -176,6 +180,7 @@
         <div>
             <img src="img/faceShot2.jpg" alt="Face shot of a testimony"> 
             <h2>Amalie Greaves</h2>
+            <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -190,13 +195,14 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
             <p> <i class="fas fa-quote-left"></i> If you need a digital folder for lots of information about your students, teachers, this is the app for you! I can't recommend it enough, hours of writing stuff down gone! <i class="fas fa-quote-right"></i> </p>
         </div>
 
     </section>
 
-    <div class="direct-fill">
-        <h3>Contact Us</h3>
+    <div class="contactUs">
+        <h1>Contact Us</h1>
     </div>
 
     <section class="form-cont" id="FORMS"> 
@@ -210,14 +216,18 @@
             <input type="text" id="email-name" name="email" placeholder="Your e-mail..">
       
           <label for="inquiry">Inquiry</label>
-          <textarea id="inquiry" name="inquiry" placeholder="Send us your inquiry or question.." style="height:200px"></textarea>
+          <textarea id="inquiry" name="inquiry" placeholder="Send us your inquiry or question.."></textarea>
       
           <input type="submit" value="Submit">  
         </form>
       
     </section>
+    
+    <footer>
+        
+    </footer>
 
+    
 
-<!-- form text here example: First name, Last name, Your email, set a password, create account button -->
 </body>
 </html>
