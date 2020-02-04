@@ -219,7 +219,7 @@ main #joinUs:hover {
   background-image: url(/img/babyInBack.jpg);
   background-attachment: fixed;
   background-size: cover;
-  height: 45vw;
+  height: 40vw;
   margin-bottom: -3%;
 }
 .spaceFiller {
@@ -227,6 +227,7 @@ main #joinUs:hover {
 }
 .img2 {
   background-image: url(/img/littleGirlHuggingBaby.jpg);
+  height: 35vw;
   margin-top: -3%;
 }
 #howItWorks {
@@ -256,6 +257,7 @@ main #joinUs:hover {
 }
 .img3 {
   background-image: url(/img/motherHelpingSon.jpg);
+  height: 35vw;
   margin-bottom: 5%;
 }
 #chartdiv {
@@ -268,7 +270,36 @@ main #joinUs:hover {
 }
 .img4 {
   background-image: url(/img/tugOfWar.jpg);
+  height: 35vw;
   margin-bottom: 5%;
+}
+.quotes {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 5%;
+}
+.quotes div {
+  width: 31%;
+}
+.quotes div h2 {
+  color: gray;
+  margin: 3%;
+}
+.quotes div .fa-quote-left,
+.quotes div .fa-quote-right {
+  color: black;
+}
+.quotes div i {
+  font-size: 1.5vw;
+  color: gold;
+}
+.quotes div img {
+  border-radius: 50%;
+  width: 15vw;
+}
+.quotes div p {
+  color: black;
+  margin: 3%;
 }
 header {
   display: flex;
@@ -366,7 +397,7 @@ header .loginSignUp #signupButton:hover {
   resize: vertical;
 }
 .form-cont input[type=submit] {
-  background-color: #4CAF50;
+  background-color: gold;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -374,5 +405,6 @@ header .loginSignUp #signupButton:hover {
   cursor: pointer;
 }
 .form-cont input[type=submit]:hover {
-  background-color: gold;
+  background-color: lightblue;
+  color: black;
 }
