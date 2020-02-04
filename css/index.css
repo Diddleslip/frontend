@@ -177,7 +177,7 @@ main #joinUs {
   border-radius: 5px;
   width: 20%;
   margin-left: -90%;
-  background-color: #a8c839;
+  background-color: gold;
   cursor: pointer;
   text-align: center;
   width: 30%;
@@ -189,11 +189,11 @@ main #joinUs {
   font-weight: bold;
 }
 main #joinUs:hover {
-  background-color: gold;
+  background-color: lightblue;
   color: black;
   transition-duration: 0.3s;
 }
-.getSetup {
+.goldenRule {
   display: flex;
   flex-direction: column;
   margin: 0% 3%;
@@ -202,16 +202,16 @@ main #joinUs:hover {
   align-items: center;
   background-color: #fcb614;
   opacity: 0.9;
-  margin-bottom: 100%;
+  margin-bottom: 7%;
 }
-.getSetup h1 {
+.goldenRule h1 {
   margin: 1% 0%;
   font-size: 2vw;
   color: black;
   border-bottom: 1px solid black;
   width: 25%;
 }
-.getSetup p {
+.goldenRule p {
   margin: 1% auto;
   font-size: 1.2vw;
 }
@@ -219,11 +219,56 @@ main #joinUs:hover {
   background-image: url(/img/babyInBack.jpg);
   background-attachment: fixed;
   background-size: cover;
-  height: 40vw;
+  height: 45vw;
   margin-bottom: -3%;
 }
-#whyUs {
-  padding-top: 10%;
+.spaceFiller {
+  padding-top: 7%;
+}
+.img2 {
+  background-image: url(/img/littleGirlHuggingBaby.jpg);
+  margin-top: -3%;
+}
+#howItWorks {
+  margin-top: 7%;
+  font-size: 2.7vw;
+  font-weight: bold;
+}
+.howSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 7%;
+}
+.howSection div {
+  width: 24%;
+  font-size: 3.5vw;
+}
+.howSection div i {
+  margin-bottom: 5%;
+}
+.howSection div h2 {
+  font-size: 2.2vw;
+  font-weight: lighter;
+  color: gold;
+}
+.howSection div p {
+  font-size: 1.5vw;
+}
+.img3 {
+  background-image: url(/img/motherHelpingSon.jpg);
+  margin-bottom: 5%;
+}
+#chartdiv {
+  width: 100vw;
+  height: 30vw;
+  background-color: #FFFFFF;
+}
+.spaceFiller2 {
+  padding-bottom: 6%;
+}
+.img4 {
+  background-image: url(/img/tugOfWar.jpg);
+  margin-bottom: 5%;
 }
 header {
   display: flex;
@@ -254,7 +299,6 @@ header nav {
   align-items: center;
   width: 30vw;
   margin-top: 0.5%;
-  overflow: visible;
 }
 header nav a {
   color: black;
@@ -274,32 +318,61 @@ header .loginSignUp {
   justify-content: flex-end;
   align-items: center;
   width: 20vw;
-  font-weight: bold;
+  font-weight: lighter;
   text-decoration: none;
 }
 header .loginSignUp #loginButton {
   text-decoration: none;
-  color: #a8c839;
+  color: gold;
   padding: 2%;
   white-space: nowrap;
   border-radius: 5px;
   border: 1px solid black;
 }
 header .loginSignUp #loginButton:hover {
-  color: gold;
+  color: lightblue;
   transition-duration: 0.3s;
 }
 header .loginSignUp #signupButton {
-  background-color: #a8c839;
+  background-color: gold;
   padding: 2%;
   text-decoration: none;
-  margin-left: 10%;
+  margin-left: 5%;
   white-space: nowrap;
   color: white;
   border-radius: 5px;
 }
 header .loginSignUp #signupButton:hover {
   color: black;
-  background-color: gold;
+  background-color: lightblue;
   transition-duration: 0.5s;
+}
+.form-cont {
+  font-size: 200%;
+  margin: 3% 10%;
+  padding: 0% 5%;
+  text-align: left;
+}
+.form-cont input[type=text],
+.form-cont select,
+.form-cont textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.form-cont input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-cont input[type=submit]:hover {
+  background-color: gold;
 }

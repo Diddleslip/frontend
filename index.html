@@ -5,8 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project</title>
-
     <link href="css/index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/431f837ba4.js" crossorigin="anonymous"></script>
+
+    <!-- amCharts javascript sources -->
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <!-- amCharts javascript code -->
+    <script type="text/javascript">
+        AmCharts.makeChart("chartdiv",
+            {
+                "type": "serial",
+                "categoryField": "category",
+                "rotate": true,
+                "angle": 30,
+                "depth3D": 30,
+                "plotAreaFillAlphas": 1,
+                "startDuration": 1,
+                "color": "#2A2AD1",
+                "fontFamily": "Arial Black",
+                "fontSize": 15,
+                "handDrawThickness": 0,
+                "theme": "light",
+                "categoryAxis": {
+                    "gridPosition": "start"
+                },
+                "trendLines": [],
+                "graphs": [
+                    {
+                        "balloonText": "[[title]] of [[category]]:[[value]]",
+                        "fillAlphas": 1,
+                        "fillColors": "#FFA500",
+                        "id": "AmGraph-1",
+                        "title": "Groups per category",
+                        "type": "column",
+                        "valueField": "column-1"
+                    }
+                ],
+                "guides": [],
+                "valueAxes": [
+                    {
+                        "id": "ValueAxis-1",
+                        "stackType": "regular",
+                        "title": ""
+                    }
+                ],
+                "allLabels": [],
+                "balloon": {},
+                "legend": {
+                    "enabled": true,
+                    "useGraphSettings": true
+                },
+                "titles": [
+                    {
+                        "id": "Title-1",
+                        "size": 20,
+                        "text": "Who uses our Product?"
+                    }
+                ],
+                "dataProvider": [
+                    {
+                        "category": "Youth Development Charities",
+                        "column-1": "16"
+                    },
+                    {
+                        "category": "Schools",
+                        "column-1": "10"
+                    },
+                    {
+                        "category": "Medical Research",
+                        "column-1": "6"
+                    },
+                    {
+                        "category": "Religious Charities",
+                        "column-1": "3"
+                    },
+                    {
+                        "category": "Youth Education Programs and Services",
+                        "column-1": "2"
+                    }
+                ]
+            }
+        );
+    </script> 
 </head>
 <body>
     <header>
@@ -31,17 +113,77 @@
 
     </main>
 
-    <div class="backgroundImage"></div>
+    <div class="backgroundImage img1"></div>
 
-    <div id="whyUs"></div id="whyUs">
+    <div class="spaceFiller" id="whyUs"></div>
 
-        <section class="getSetup">
-            <h1>Our Golden Rule</h1>
-            
-            <p> Get setup within minutes: our app is designed for quick and easy setup so you don't have to worry about all the technical stuff. This means you can spend more time with your students and less time worrying about your data.</p>
-    
-            <p>Simply make an account and get access to all of our tools such as creating, reading, updating, and deleting student data. All at your command within seconds.</p>
-        </section>
+    <section class="goldenRule">
+        <h1>Our Golden Rule</h1>
+        
+        <p> Get setup within minutes: our app is designed for quick and easy setup so you don't have to worry about all the technical stuff. This means you can spend more time with your students and less time worrying about your data.</p>
+    </section>
+
+    <div class="backgroundImage img2"></div>
+
+    <h1 id="howItWorks">How It Works</h1>
+
+    <section class="howSection">
+        <div>
+            <i class="fas fa-user"></i>
+            <h2>Sign Up</h2>
+            <p>Simply create an account and get access to all of our tools such as creating, reading, updating, and deleting student data. All at your command within seconds.</p>
+        </div>
+
+        <div>
+            <i class="fas fa-hourglass-half"></i>
+            <h2> Easy Data</h2>
+            <p>Cut times organizing and make your student's data easy to read with our effective, yet simple tools.</p>
+        </div>
+
+        <div>
+            <i class="fas fa-briefcase-medical"></i>
+            <h2>Reliability</h2>
+            <p>We'll always be by your side even in times of emergency, with quick loading data, and realible back-end information, so you can focus with what's infront of you. </p>
+        </div>  
+
+        <div>
+            <i class="fas fa-unlock-alt"></i>
+            <h2>Security</h2>
+            <p>With our state of the art technology security, you'll never have to worry about your data going down, or being slowed down by servers. Accessibility everywhere! </p>
+        </div>
+    </section>
+
+    <div class="backgroundImage img3"></div>
+
+
+    <div id="chartdiv"></div>
+
+    <div class="spaceFiller2"></div>  
+
+    <div class="backgroundImage img4"></div>
+
+    <div class="direct-fill">
+        <h3>Contact Us</h3>
+    </div>
+
+    <section class="form-cont" id="FORMS"> 
+
+        <form action="#">
+          
+          <label for="name">Full Name</label>
+            <input type="text" id="name" name="first-last-name" placeholder="Your full name..">
+      
+            <label for="email-name">E-mail</label>
+            <input type="text" id="email-name" name="email" placeholder="Your e-mail..">
+      
+          <label for="inquiry">Inquiry</label>
+          <textarea id="inquiry" name="inquiry" placeholder="Send us your inquiry or question.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">  
+        </form>
+      
+    </section>
+
 
 <!-- form text here example: First name, Last name, Your email, set a password, create account button -->
 </body>
