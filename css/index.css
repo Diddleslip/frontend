@@ -151,12 +151,13 @@ main {
   justify-content: center;
   margin-top: 8%;
 }
-main img {
-  background-image: url(img/kidsSmiling.jpg);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+main .img5 {
+  background-image: url(../img/kidsSmiling.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 40vw;
+  margin-bottom: -3%;
   width: 100vw;
-  margin-bottom: -10%;
 }
 main .hookP {
   position: absolute;
@@ -164,17 +165,22 @@ main .hookP {
   margin-left: -90%;
   font-size: 2.5vw;
   width: 30%;
-  background: white;
+  background: DarkGray;
   opacity: 0.9;
   color: gold;
   text-size-adjust: auto;
   padding: 1%;
+  border-radius: 2px;
+}
+@media ( max-width: 1000px) {
+  main .hookP {
+    font-size: 3.5vw;
+  }
 }
 main #joinUs {
   margin-top: 20%;
   font-size: 3vw;
   color: floralwhite;
-  border-radius: 5px;
   width: 20%;
   margin-left: -90%;
   background-color: gold;
@@ -182,7 +188,7 @@ main #joinUs {
   text-align: center;
   width: 30%;
   padding: 1%;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   white-space: nowrap;
   text-decoration: none;
@@ -192,6 +198,11 @@ main #joinUs:hover {
   background-color: lightblue;
   color: black;
   transition-duration: 0.3s;
+}
+@media ( max-width: 1000px) {
+  main #joinUs {
+    margin-top: 28vw;
+  }
 }
 .goldenRule {
   display: flex;
@@ -211,17 +222,31 @@ main #joinUs:hover {
   border-bottom: 1px solid black;
   width: 25%;
 }
+@media ( max-width: 1000px) {
+  .goldenRule h1 {
+    width: 40%;
+    font-size: 4vw;
+  }
+}
 .goldenRule p {
   margin: 2% auto;
   font-size: 1.2vw;
   width: 75%;
 }
+@media ( max-width: 1000px) {
+  .goldenRule p {
+    font-size: 2.5vw;
+  }
+}
 .backgroundImage {
   background-image: url(../img/babyInBack.jpg);
   background-attachment: fixed;
-  background-size: cover;
   height: 40vw;
   margin-bottom: -3%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .spaceFiller {
   padding-top: 7%;
@@ -235,6 +260,11 @@ main #joinUs:hover {
   margin-top: 7%;
   font-size: 2.7vw;
   font-weight: bold;
+}
+@media ( max-width: 1000px) {
+  #howItWorks {
+    font-size: 3.5vw;
+  }
 }
 .howSection {
   display: flex;
@@ -253,8 +283,34 @@ main #joinUs:hover {
   font-weight: lighter;
   color: gold;
 }
+@media ( max-width: 1000px) {
+  .howSection div h2 {
+    font-size: 3vw;
+  }
+}
 .howSection div p {
-  font-size: 1.5vw;
+  font-size: 1.6vw;
+  margin: 2%;
+  padding: 5%;
+  background: #f4f4f4;
+  border: 1px solid #e0e0e0;
+}
+@media ( max-width: 1000px) {
+  .howSection div p {
+    font-size: 2.2vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .howSection div {
+    width: 40%;
+    margin: 2%;
+  }
+}
+@media ( max-width: 1000px) {
+  .howSection {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 }
 .img3 {
   background-image: url(../img/motherHelpingSon.jpg);
@@ -280,18 +336,31 @@ main #joinUs:hover {
   padding-bottom: 1%;
   border-bottom: 5px solid gold;
 }
+@media ( max-width: 1000px) {
+  .testimonials {
+    font-size: 6vw;
+    margin: 5% 30vw;
+  }
+}
 .quotes {
   display: flex;
   justify-content: space-between;
-  margin: 5% 5%;
+  margin: auto;
+  border-bottom: 1px solid black;
 }
 .quotes div {
+  margin: 5% 5%;
   width: 31%;
 }
 .quotes div h2 {
   color: gray;
   margin: 3%;
   font-size: 2.5vw;
+}
+@media ( max-width: 1000px) {
+  .quotes div h2 {
+    font-size: 4vw;
+  }
 }
 .quotes div .fa-quote-left,
 .quotes div .fa-quote-right {
@@ -300,6 +369,11 @@ main #joinUs:hover {
 .quotes div i {
   font-size: 1.5vw;
   color: gold;
+}
+@media ( max-width: 1000px) {
+  .quotes div i {
+    font-size: 2.5vw;
+  }
 }
 .quotes div img {
   border-radius: 50%;
@@ -310,14 +384,40 @@ main #joinUs:hover {
   color: black;
   margin: 3%;
   padding: 5%;
-  font-size: 1vw;
+  font-size: 1.5vw;
   background-color: #f4f4f4;
   border: 1px solid #e0e0e0;
 }
+@media ( max-width: 1000px) {
+  .quotes div p {
+    font-size: 2.7vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .quotes div #firstP {
+    padding-bottom: 27.5vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .quotes div {
+    flex-wrap: wrap;
+    width: 40%;
+  }
+}
+@media ( max-width: 1000px) {
+  .quotes {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .contactUs {
+  margin: 0% 35%;
+  padding: 1% 0%;
   margin-top: 10%;
-  color: gold;
+  color: black;
   font-size: 3vw;
+  background: #f4f4f4;
+  border: 1px solid #e0e0e0;
 }
 header {
   display: flex;
@@ -396,8 +496,10 @@ header .loginSignUp #signupButton:hover {
   background-color: lightblue;
   transition-duration: 0.5s;
 }
-.aboutBody {
-  min-height: 100%;
+@media ( max-width: 1000px) {
+  header {
+    font-size: 2.5vw;
+  }
 }
 footer {
   position: relative;
@@ -412,16 +514,27 @@ footer h2 {
   border: 1px solid #e0e0e0;
   bottom: 0;
 }
+@media ( max-width: 1000px) {
+  footer h2 {
+    padding: 2.5% 1.5%;
+    font-size: 2.2vw;
+  }
+}
 .footerDiv {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-right: 10vw;
-  font-size: 2vw;
+  font-size: 3.2vw;
 }
 .footerDiv a {
   margin: 0.5% 0%;
   color: gold;
+}
+@media ( max-width: 1000px) {
+  .footerDiv {
+    font-size: 4.2vw;
+  }
 }
 .footerAbout {
   position: absolute;
@@ -429,15 +542,15 @@ footer h2 {
   width: 100%;
   height: 10vw;
 }
-.form-cont {
-  font-size: 200%;
+.formCont {
+  font-size: 2.5vw;
   margin: 3% 10%;
   padding: 0% 5%;
   text-align: left;
 }
-.form-cont input[type=text],
-.form-cont select,
-.form-cont textarea {
+.formCont input[type=text],
+.formCont select,
+.formCont textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -446,8 +559,9 @@ footer h2 {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-size: 1.2vw;
 }
-.form-cont input[type=submit] {
+.formCont input[type=submit] {
   background-color: gold;
   color: white;
   padding: 12px 20px;
@@ -455,12 +569,17 @@ footer h2 {
   border-radius: 4px;
   cursor: pointer;
 }
-.form-cont textarea {
+.formCont textarea {
   height: 200px;
 }
-.form-cont input[type=submit]:hover {
+.formCont input[type=submit]:hover {
   background-color: lightblue;
   color: black;
+}
+@media ( max-width: 1000px) {
+  .formCont {
+    font-size: 3vw;
+  }
 }
 .ourTeam {
   margin-top: 10%;
@@ -477,13 +596,35 @@ footer h2 {
   margin: 2% 0%;
 }
 .aboutUs div img {
-  margin: 2% 0%;
+  margin: 5% 0%;
   width: 10vw;
+}
+@media ( max-width: 1000px) {
+  .aboutUs div img {
+    width: 15vw;
+  }
 }
 .aboutUs div h2 {
   font-size: 2.5vw;
+  font-weight: bold;
+}
+@media ( max-width: 1000px) {
+  .aboutUs div h2 {
+    font-size: vw;
+  }
 }
 .aboutUs div h3 {
-  margin: 2% 0%;
+  margin: 5% 0%;
   font-size: 1.8vw;
+}
+@media ( max-width: 1000px) {
+  .aboutUs div h3 {
+    font-size: 2.4vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .aboutUs {
+    width: 60vw;
+    margin: 5% 20%;
+  }
 }

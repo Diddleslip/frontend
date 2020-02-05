@@ -5,12 +5,13 @@ main {
     justify-content: center;
     margin-top: 8%;
 
-    img {
-        background-image: url(img/kidsSmiling.jpg);
-        background-repeat: no-repeat;
-        background-attachment: scroll;
+    .img5 {
+        background-image: url(../img/kidsSmiling.jpg); //solution 1 upvotes 30 WORKED!
+        background-attachment: fixed;
+        background-size: cover;
+        height: 40vw;
+        margin-bottom: -3%;
         width: 100vw;
-        margin-bottom: -10%;
     }
 
     .hookP {
@@ -19,23 +20,31 @@ main {
         margin-left: -90%;
         font-size: 2.5vw;
         width: 30%;
-        background: white;
+        background:DarkGray;
         opacity: .9;
         color: gold;
         text-size-adjust: auto;
         padding: 1%;
+        border-radius: 2px;
 
+
+        @media @tablet {
+            font-size: 3.5vw;
+        }
     }
 
     #joinUs {
         margin-top: 20%;
         font-size: 3vw;
         color: floralwhite;
-        border-radius: 5px;
         width: 20%;
         margin-left: -90%;
 
-        .customButton(@bg-color: gold; @width: 30%; @font-color: white;)
+        .customButton(@bg-color: gold; @width: 30%; @font-color: white;);
+
+        @media @tablet {
+            margin-top: 28vw;
+        }
     }
 }//closes main
 
@@ -56,13 +65,23 @@ main {
         color: black;
         border-bottom: 1px solid black;
         width: 25%;
+
+        @media @tablet {
+            width: 40%;
+            font-size: 4vw;
+        }
     }
 
     p {
         margin: 2% auto;
         font-size: 1.2vw;
         width: 75%;
+
+        @media @tablet {
+            font-size: 2.5vw;
+        }
     }
+
 
 }//closes .getSetup
 
@@ -72,6 +91,10 @@ main {
     background-size: cover;
     height: 40vw;
     margin-bottom: -3%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .spaceFiller {
@@ -88,6 +111,10 @@ main {
     margin-top: 7%;
     font-size: 2.7vw;
     font-weight: bold;
+
+    @media @tablet {
+        font-size: 3.5vw;
+    }
 }
 
 .howSection {
@@ -107,12 +134,34 @@ main {
             font-size: 2.2vw;
             font-weight: lighter;
             color: gold;
+
+            @media @tablet {
+                font-size: 3vw;
+            }
         }
 
         p {
-            font-size: 1.5vw;
+            font-size: 1.6vw;
+            margin: 2%;
+            padding: 5%;
+            background: @grayBackground;
+            border: 1px solid @grayBorder;
+
+            @media @tablet {
+                font-size: 2.2vw;
+            }
+        }
+
+        @media @tablet {
+            width: 40%;
+            margin: 2%;
         }
     }//closes div
+
+    @media @tablet {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 }//closes .howSection
 
 .img3 {
@@ -141,21 +190,31 @@ main {
     margin: 5% 35vw;
     padding-bottom: 1%;
     border-bottom: 5px solid gold;
+
+    @media @tablet {
+        font-size: 6vw;
+        margin: 5% 30vw;
+    }
 }
 
 .quotes {
     display: flex;
     justify-content: space-between;
-    margin: 5% 5%;
+    margin: auto;
+    border-bottom: 1px solid black;
 
     div {
-
+        margin: 5% 5%;
         width: 31%;
 
         h2 {
             color: gray;
             margin: 3%;
             font-size: 2.5vw;
+
+            @media @tablet {
+                font-size: 4vw;
+            }
         }
 
         .fa-quote-left, .fa-quote-right {
@@ -165,6 +224,10 @@ main {
         i {
             font-size: 1.5vw;
             color: gold;
+
+            @media @tablet {
+                font-size: 2.5vw;
+            }
         }
 
 
@@ -178,15 +241,40 @@ main {
             color: black;
             margin: 3%;
             padding: 5%;
-            font-size: 1vw;
+            font-size: 1.5vw;
             background-color: #f4f4f4; 
             border: 1px solid @grayBorder;
+
+            @media @tablet {
+                font-size: 2.7vw;
+            }
         }
-    }    
+
+        #firstP {
+
+            @media @tablet {
+                padding-bottom: 27.5vw;
+            }
+        }
+
+        @media @tablet {
+            flex-wrap: wrap;
+            width: 40%;
+        }
+    }//closes div    
+
+    @media @tablet {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }//closes .quotes
 
 .contactUs {
+    margin: 0% 35%;
+    padding: 1% 0%;
     margin-top: 10%;
-    color: gold;
+    color: black;
     font-size: 3vw;
+    background: @grayBackground;
+    border: 1px solid @grayBorder
 }
