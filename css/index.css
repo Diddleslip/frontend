@@ -217,7 +217,7 @@ main #joinUs:hover {
   width: 75%;
 }
 .backgroundImage {
-  background-image: url("/img/babyInBack.jpg");
+  background-image: url(../img/babyInBack.jpg);
   background-attachment: fixed;
   background-size: cover;
   height: 40vw;
@@ -227,7 +227,7 @@ main #joinUs:hover {
   padding-top: 7%;
 }
 .img2 {
-  background-image: url(/img/littleGirlHuggingBaby.jpg);
+  background-image: url(img/littleGirlHuggingBaby.jpg);
   height: 35vw;
   margin-top: -3%;
 }
@@ -270,7 +270,7 @@ main #joinUs:hover {
   padding-bottom: 6%;
 }
 .img4 {
-  background-image: url("/img/tugOfWar.jpg");
+  background-image: url(/img/tugOfWar.jpg);
   height: 35vw;
   margin-bottom: 5%;
 }
