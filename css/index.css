@@ -166,7 +166,7 @@ main .hookP {
   width: 30%;
   background: white;
   opacity: 0.9;
-  color: orange;
+  color: gold;
   text-size-adjust: auto;
   padding: 1%;
 }
@@ -200,20 +200,21 @@ main #joinUs:hover {
   padding: 3%;
   border: 1px solid black;
   align-items: center;
-  background-color: #fcb614;
+  background-color: gold;
   opacity: 0.9;
   margin-bottom: 7%;
 }
 .goldenRule h1 {
-  margin: 1% 0%;
+  padding: 1% 0%;
   font-size: 2vw;
   color: black;
   border-bottom: 1px solid black;
   width: 25%;
 }
 .goldenRule p {
-  margin: 1% auto;
+  margin: 2% auto;
   font-size: 1.2vw;
+  width: 75%;
 }
 .backgroundImage {
   background-image: url(/img/babyInBack.jpg);
@@ -290,6 +291,7 @@ main #joinUs:hover {
 .quotes div h2 {
   color: gray;
   margin: 3%;
+  font-size: 2.5vw;
 }
 .quotes div .fa-quote-left,
 .quotes div .fa-quote-right {
@@ -302,11 +304,15 @@ main #joinUs:hover {
 .quotes div img {
   border-radius: 50%;
   width: 15vw;
+  border: 1px solid black;
 }
 .quotes div p {
   color: black;
   margin: 3%;
+  padding: 5%;
   font-size: 1vw;
+  background-color: #f4f4f4;
+  border: 1px solid #e0e0e0;
 }
 .contactUs {
   margin-top: 10%;
@@ -389,6 +395,24 @@ header .loginSignUp #signupButton:hover {
   color: black;
   background-color: lightblue;
   transition-duration: 0.5s;
+}
+footer h2 {
+  font-size: 1.2vw;
+  padding: 2% 1%;
+  margin: auto 25vw;
+  background: #f4f4f4;
+  border: 1px solid #e0e0e0;
+}
+.footerDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10vw;
+  font-size: 2vw;
+}
+.footerDiv a {
+  margin: 0.5% 0%;
+  color: gold;
 }
 .form-cont {
   font-size: 200%;
