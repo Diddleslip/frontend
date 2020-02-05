@@ -152,7 +152,7 @@ main {
   margin-top: 8%;
 }
 main img {
-  background-image: url("/img/kidsSmiling.jpg");
+  background-image: url(img/kidsSmiling.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   width: 100vw;
@@ -217,7 +217,7 @@ main #joinUs:hover {
   width: 75%;
 }
 .backgroundImage {
-  background-image: url(/img/babyInBack.jpg);
+  background-image: url("/img/babyInBack.jpg");
   background-attachment: fixed;
   background-size: cover;
   height: 40vw;
@@ -257,7 +257,7 @@ main #joinUs:hover {
   font-size: 1.5vw;
 }
 .img3 {
-  background-image: url(/img/motherHelpingSon.jpg);
+  background-image: url("img/motherHelpingSon.jpg");
   height: 35vw;
   margin-bottom: 5%;
 }
@@ -270,7 +270,7 @@ main #joinUs:hover {
   padding-bottom: 6%;
 }
 .img4 {
-  background-image: url(/img/tugOfWar.jpg);
+  background-image: url("img/tugOfWar.jpg");
   height: 35vw;
   margin-bottom: 5%;
 }
