@@ -1,0 +1,90 @@
+// Navigation Styles
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    font-size: 1.3vw;
+    padding: 0% 10%;
+    border-bottom: 1px solid black;
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+    position: fixed;
+    z-index:1;
+    top: 0;
+    background-color: white;
+
+    img {
+        margin-top: 2%;
+        width: 5vw;
+        margin-right: 15vw;
+
+        &:hover {
+            background-color: lightgray;
+            transition-duration: 0.3s;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30vw;
+        margin-top: .5%;
+
+        a {
+            color: black;
+            text-decoration: none;
+            white-space: nowrap;
+            width: auto;
+            border-bottom: 1px solid gray;
+            padding-bottom: .7%;
+
+            &:hover {
+                color: #fcc915;
+                border-bottom: 1px solid black;
+                transition-duration: 0.3s;
+            }
+        }
+    }//closes nav
+
+    .loginSignUp {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 20vw;
+        font-weight: lighter;
+        text-decoration: none;
+
+        #loginButton {
+            text-decoration: none;
+            color: gold;
+            padding: 2%;
+            white-space: nowrap;
+            border-radius: 5px;
+            border: 1px solid black;
+
+
+            &:hover {
+                color: gold;
+                transition-duration: 0.3s;
+            }
+        }//closes #loginButton     
+        
+        #signupButton {
+            background-color: gold;
+            padding: 2%;
+            text-decoration: none;
+            margin-left: 5%;
+            white-space: nowrap;
+            color: white;
+            border-radius: 5px;
+
+            &:hover {
+                color: black;
+                background-color: lightblue; 
+                transition-duration: 0.5s;
+            }
+        }//closes #signupButton
+    }//closes .loginSignUp
+}//closes .navDiv

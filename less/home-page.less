@@ -1,0 +1,192 @@
+// Home Page Styles
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+
+    img {
+        background-image: url("/img/kidsSmiling.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        width: 100vw;
+        margin-bottom: -10%;
+    }
+
+    .hookP {
+        position: absolute;
+        margin-top: 7%;
+        margin-left: -90%;
+        font-size: 2.5vw;
+        width: 30%;
+        background: white;
+        opacity: .9;
+        color: gold;
+        text-size-adjust: auto;
+        padding: 1%;
+
+    }
+
+    #joinUs {
+        margin-top: 20%;
+        font-size: 3vw;
+        color: floralwhite;
+        border-radius: 5px;
+        width: 20%;
+        margin-left: -90%;
+
+        .customButton(@bg-color: gold; @width: 30%; @font-color: white;)
+    }
+}//closes main
+
+.goldenRule {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 3%;
+    padding: 3%;
+    border: 1px solid black;
+    align-items: center;
+    background-color:gold;
+    opacity: .9;
+    margin-bottom: 7%;
+
+    h1 {
+        padding: 1% 0%;
+        font-size: 2vw;
+        color: black;
+        border-bottom: 1px solid black;
+        width: 25%;
+    }
+
+    p {
+        margin: 2% auto;
+        font-size: 1.2vw;
+        width: 75%;
+    }
+
+}//closes .getSetup
+
+.backgroundImage {
+    background-image: url(/img/babyInBack.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 40vw;
+    margin-bottom: -3%;
+}
+
+.spaceFiller {
+    padding-top: 7%;
+}
+
+.img2 {
+    background-image: url(/img/littleGirlHuggingBaby.jpg);
+    height: 35vw;
+    margin-top: -3%;
+}
+
+#howItWorks {
+    margin-top: 7%;
+    font-size: 2.7vw;
+    font-weight: bold;
+}
+
+.howSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 7%;
+
+    div {
+        width: 24%;
+        font-size: 3.5vw;
+
+        i {
+            margin-bottom: 5%;
+        }
+
+        h2 {
+            font-size: 2.2vw;
+            font-weight: lighter;
+            color: gold;
+        }
+
+        p {
+            font-size: 1.5vw;
+        }
+    }//closes div
+}//closes .howSection
+
+.img3 {
+    background-image: url(/img/motherHelpingSon.jpg);
+    height: 35vw;
+    margin-bottom: 5%;
+}
+
+    #chartdiv {
+        width: 100vw; height: 30vw; background-color: #FFFFFF;
+        // display: none;
+    }
+
+.spaceFiller2 {
+    padding-bottom: 6%;
+}
+
+.img4 {
+    background-image: url(/img/tugOfWar.jpg);
+    height: 35vw;
+    margin-bottom: 5%;
+}
+
+.testimonials {
+    font-size: 4vw;
+    margin: 5% 35vw;
+    padding-bottom: 1%;
+    border-bottom: 5px solid gold;
+}
+
+.quotes {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 5%;
+
+    div {
+
+        width: 31%;
+
+        h2 {
+            color: gray;
+            margin: 3%;
+            font-size: 2.5vw;
+        }
+
+        .fa-quote-left, .fa-quote-right {
+            color: black;
+        }
+
+        i {
+            font-size: 1.5vw;
+            color: gold;
+        }
+
+
+        img {
+            border-radius: 50%;
+            width: 15vw;
+            border: 1px solid @test;
+        }
+
+        p {
+            color: black;
+            margin: 3%;
+            padding: 5%;
+            font-size: 1vw;
+            background-color: #f4f4f4; 
+            border: 1px solid @grayBorder;
+        }
+    }    
+}//closes .quotes
+
+.contactUs {
+    margin-top: 10%;
+    color: gold;
+    font-size: 3vw;
+}
