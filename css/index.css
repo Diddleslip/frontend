@@ -396,12 +396,21 @@ header .loginSignUp #signupButton:hover {
   background-color: lightblue;
   transition-duration: 0.5s;
 }
+.aboutBody {
+  min-height: 100%;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
 footer h2 {
   font-size: 1.2vw;
   padding: 2% 1%;
   margin: auto 25vw;
   background: #f4f4f4;
   border: 1px solid #e0e0e0;
+  bottom: 0;
 }
 .footerDiv {
   display: flex;
@@ -413,6 +422,12 @@ footer h2 {
 .footerDiv a {
   margin: 0.5% 0%;
   color: gold;
+}
+.footerAbout {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
 }
 .form-cont {
   font-size: 200%;
@@ -446,4 +461,29 @@ footer h2 {
 .form-cont input[type=submit]:hover {
   background-color: lightblue;
   color: black;
+}
+.ourTeam {
+  margin-top: 10%;
+  font-size: 3.5vw;
+}
+.aboutUs {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 5% 5%;
+  margin-left: 7%;
+}
+.aboutUs div {
+  margin: 2% 0%;
+}
+.aboutUs div img {
+  margin: 2% 0%;
+  width: 10vw;
+}
+.aboutUs div h2 {
+  font-size: 2.5vw;
+}
+.aboutUs div h3 {
+  margin: 2% 0%;
+  font-size: 1.8vw;
 }
