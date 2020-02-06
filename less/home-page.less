@@ -3,10 +3,10 @@
 main {
     display: flex;
     justify-content: center;
-    margin-top: 8%;
+    margin-top: 7%;
 
     .img5 {
-        background-image: url(../img/kidsSmiling.jpg); //solution 1 upvotes 30 WORKED!
+        background-image: url(../img/backgroundImage.jpg); //solution 1 upvotes 30 WORKED!
         background-attachment: fixed;
         background-size: cover;
         height: 40vw;
@@ -20,9 +20,10 @@ main {
         margin-left: -90%;
         font-size: 2.5vw;
         width: 30%;
-        background:DarkGray;
+        background:@grayBackground;
+        border: 1px solid @grayBorder;
         opacity: .9;
-        color: gold;
+        color: #e6c300;
         text-size-adjust: auto;
         padding: 1%;
         border-radius: 2px;
@@ -31,20 +32,31 @@ main {
         @media @tablet {
             font-size: 3.5vw;
         }
+        @media @medium {
+            font-size: 4vw;
+            padding: 2%;
+            margin-left: -75%;
+            width: 50%;
+        }
+        @media @mobile {
+            margin-top: 7.5%;
+        }
     }
 
     #joinUs {
         margin-top: 20%;
         font-size: 3vw;
-        color: floralwhite;
-        width: 20%;
-        margin-left: -90%;
 
         .customButton(@bg-color: gold; @width: 30%; @font-color: white;);
 
         @media @tablet {
             margin-top: 28vw;
         }
+        @media @medium {
+            font-size: 3.5vw;
+            width: 50%;
+            padding: 1.5%;
+        }        
     }
 }//closes main
 
@@ -53,7 +65,7 @@ main {
     flex-direction: column;
     margin: 0% 3%;
     padding: 3%;
-    border: 1px solid black;
+    border: 1px solid @grayBorder;
     align-items: center;
     background-color:gold;
     opacity: .9;
@@ -61,24 +73,41 @@ main {
 
     h1 {
         padding: 1% 0%;
-        font-size: 2vw;
+        font-size: 3.2vw;
         color: black;
         border-bottom: 1px solid black;
-        width: 25%;
+        width: 35%;
 
         @media @tablet {
-            width: 40%;
+            width: 50%;
             font-size: 4vw;
+        }
+        @media @medium {
+            width: 50%;
+            font-size: 4.5vw;
+        }
+        @media @mobile {
+            font-size: 5vw;
+            width: 60%;
         }
     }
 
     p {
         margin: 2% auto;
-        font-size: 1.2vw;
+        font-size: 2vw;
         width: 75%;
 
         @media @tablet {
+            width: 90%;
             font-size: 2.5vw;
+        }
+        @media @medium {
+            font-size: 3.2vw;
+            width: 100%;
+        }
+        @media @mobile {
+            font-size: 4vw;
+            width: 100%;
         }
     }
 
@@ -95,6 +124,10 @@ main {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    @media @medium {
+        background-attachment: scroll;
+    }
 }
 
 .spaceFiller {
@@ -115,6 +148,14 @@ main {
     @media @tablet {
         font-size: 3.5vw;
     }
+    @media @medium {
+        font-size: 4.5vw;
+    }
+    @media @mobile {
+        font-size: 5.5vw;
+        margin-top: 12%;
+        margin-bottom: 10%;
+    }
 }
 
 .howSection {
@@ -128,6 +169,12 @@ main {
 
         i {
             margin-bottom: 5%;
+
+            @media @mobile {
+                font-size: 6vw;
+                align-items: center;
+                margin-bottom: 3%;
+            }
         }
 
         h2 {
@@ -137,6 +184,19 @@ main {
 
             @media @tablet {
                 font-size: 3vw;
+            }
+            @media @medium {
+                font-size: 4vw;
+            }
+            @media @mobile {
+                font-size: 6vw;
+            }
+        }
+
+        #easyDataP {
+
+            @media @medium {
+                padding-bottom: 13.5vw;
             }
         }
 
@@ -150,16 +210,32 @@ main {
             @media @tablet {
                 font-size: 2.2vw;
             }
+            @media @medium {
+                font-size: 3vw;
+            }
+            @media @mobile {
+                font-size: 4.2vw;
+                margin-bottom: 10%;
+            }
         }
 
         @media @tablet {
             width: 40%;
             margin: 2%;
         }
+        @media @mobile {
+            width: 100%;
+            margin: 0%;
+        }
     }//closes div
 
     @media @tablet {
         justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
         flex-wrap: wrap;
     }
 }//closes .howSection
@@ -168,11 +244,18 @@ main {
     background-image: url(../img/motherHelpingSon.jpg); //solution 3 upvotes 5
     height: 35vw;
     margin-bottom: 5%;
+
+    @media @medium {
+        display: none;
+    }
 }
 
     #chartdiv {
         width: 100vw; height: 30vw; background-color: #FFFFFF;
-        // display: none;
+        
+        @media @medium {
+            display: none;
+        }
     }
 
 .spaceFiller2 {
@@ -195,6 +278,10 @@ main {
         font-size: 6vw;
         margin: 5% 30vw;
     }
+    @media @mobile {
+        font-size: 7.5vw;
+        margin: 5% 25vw;
+    }
 }
 
 .quotes {
@@ -215,6 +302,9 @@ main {
             @media @tablet {
                 font-size: 4vw;
             }
+            @media @mobile {
+                font-size: 7vw;
+            }
         }
 
         .fa-quote-left, .fa-quote-right {
@@ -228,6 +318,10 @@ main {
             @media @tablet {
                 font-size: 2.5vw;
             }
+            @media @mobile {
+                font-size: 4.5vw;
+                margin: 4% 0%;
+            }
         }
 
 
@@ -235,6 +329,10 @@ main {
             border-radius: 50%;
             width: 15vw;
             border: 1px solid @test;
+
+            @media @mobile {
+                width: 30vw;
+            }
         }
 
         p {
@@ -248,6 +346,9 @@ main {
             @media @tablet {
                 font-size: 2.7vw;
             }
+            @media @mobile {
+                font-size: 5.7vw;
+            }
         }
 
         #firstP {
@@ -255,17 +356,27 @@ main {
             @media @tablet {
                 padding-bottom: 27.5vw;
             }
+            @media @mobile {
+                padding-bottom: 0;
+            }
         }
 
         @media @tablet {
             flex-wrap: wrap;
             width: 40%;
         }
+        @media @mobile {
+            width: 80%;
+        }
     }//closes div    
 
     @media @tablet {
         justify-content: center;
         flex-wrap: wrap;
+    }
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
     }
 }//closes .quotes
 

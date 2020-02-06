@@ -149,10 +149,10 @@ p {
 main {
   display: flex;
   justify-content: center;
-  margin-top: 8%;
+  margin-top: 7%;
 }
 main .img5 {
-  background-image: url(../img/kidsSmiling.jpg);
+  background-image: url(../img/backgroundImage.jpg);
   background-attachment: fixed;
   background-size: cover;
   height: 40vw;
@@ -165,9 +165,10 @@ main .hookP {
   margin-left: -90%;
   font-size: 2.5vw;
   width: 30%;
-  background: DarkGray;
+  background: #f4f4f4;
+  border: 1px solid #e0e0e0;
   opacity: 0.9;
-  color: gold;
+  color: #e6c300;
   text-size-adjust: auto;
   padding: 1%;
   border-radius: 2px;
@@ -177,13 +178,24 @@ main .hookP {
     font-size: 3.5vw;
   }
 }
+@media ( max-width: 800px) {
+  main .hookP {
+    font-size: 4vw;
+    padding: 2%;
+    margin-left: -75%;
+    width: 50%;
+  }
+}
+@media ( max-width: 600px) {
+  main .hookP {
+    margin-top: 7.5%;
+  }
+}
 main #joinUs {
   margin-top: 20%;
   font-size: 3vw;
-  color: floralwhite;
-  width: 20%;
-  margin-left: -90%;
   background-color: gold;
+  border: 1px solid black;
   cursor: pointer;
   text-align: center;
   width: 30%;
@@ -204,12 +216,19 @@ main #joinUs:hover {
     margin-top: 28vw;
   }
 }
+@media ( max-width: 800px) {
+  main #joinUs {
+    font-size: 3.5vw;
+    width: 50%;
+    padding: 1.5%;
+  }
+}
 .goldenRule {
   display: flex;
   flex-direction: column;
   margin: 0% 3%;
   padding: 3%;
-  border: 1px solid black;
+  border: 1px solid #e0e0e0;
   align-items: center;
   background-color: gold;
   opacity: 0.9;
@@ -217,25 +236,50 @@ main #joinUs:hover {
 }
 .goldenRule h1 {
   padding: 1% 0%;
-  font-size: 2vw;
+  font-size: 3.2vw;
   color: black;
   border-bottom: 1px solid black;
-  width: 25%;
+  width: 35%;
 }
 @media ( max-width: 1000px) {
   .goldenRule h1 {
-    width: 40%;
+    width: 50%;
     font-size: 4vw;
+  }
+}
+@media ( max-width: 800px) {
+  .goldenRule h1 {
+    width: 50%;
+    font-size: 4.5vw;
+  }
+}
+@media ( max-width: 600px) {
+  .goldenRule h1 {
+    font-size: 5vw;
+    width: 60%;
   }
 }
 .goldenRule p {
   margin: 2% auto;
-  font-size: 1.2vw;
+  font-size: 2vw;
   width: 75%;
 }
 @media ( max-width: 1000px) {
   .goldenRule p {
+    width: 90%;
     font-size: 2.5vw;
+  }
+}
+@media ( max-width: 800px) {
+  .goldenRule p {
+    font-size: 3.2vw;
+    width: 100%;
+  }
+}
+@media ( max-width: 600px) {
+  .goldenRule p {
+    font-size: 4vw;
+    width: 100%;
   }
 }
 .backgroundImage {
@@ -247,6 +291,11 @@ main #joinUs:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+@media ( max-width: 800px) {
+  .backgroundImage {
+    background-attachment: scroll;
+  }
 }
 .spaceFiller {
   padding-top: 7%;
@@ -266,6 +315,18 @@ main #joinUs:hover {
     font-size: 3.5vw;
   }
 }
+@media ( max-width: 800px) {
+  #howItWorks {
+    font-size: 4.5vw;
+  }
+}
+@media ( max-width: 600px) {
+  #howItWorks {
+    font-size: 5.5vw;
+    margin-top: 12%;
+    margin-bottom: 10%;
+  }
+}
 .howSection {
   display: flex;
   justify-content: space-between;
@@ -278,6 +339,13 @@ main #joinUs:hover {
 .howSection div i {
   margin-bottom: 5%;
 }
+@media ( max-width: 600px) {
+  .howSection div i {
+    font-size: 6vw;
+    align-items: center;
+    margin-bottom: 3%;
+  }
+}
 .howSection div h2 {
   font-size: 2.2vw;
   font-weight: lighter;
@@ -286,6 +354,21 @@ main #joinUs:hover {
 @media ( max-width: 1000px) {
   .howSection div h2 {
     font-size: 3vw;
+  }
+}
+@media ( max-width: 800px) {
+  .howSection div h2 {
+    font-size: 4vw;
+  }
+}
+@media ( max-width: 600px) {
+  .howSection div h2 {
+    font-size: 6vw;
+  }
+}
+@media ( max-width: 800px) {
+  .howSection div #easyDataP {
+    padding-bottom: 13.5vw;
   }
 }
 .howSection div p {
@@ -300,10 +383,27 @@ main #joinUs:hover {
     font-size: 2.2vw;
   }
 }
+@media ( max-width: 800px) {
+  .howSection div p {
+    font-size: 3vw;
+  }
+}
+@media ( max-width: 600px) {
+  .howSection div p {
+    font-size: 4.2vw;
+    margin-bottom: 10%;
+  }
+}
 @media ( max-width: 1000px) {
   .howSection div {
     width: 40%;
     margin: 2%;
+  }
+}
+@media ( max-width: 600px) {
+  .howSection div {
+    width: 100%;
+    margin: 0%;
   }
 }
 @media ( max-width: 1000px) {
@@ -312,15 +412,32 @@ main #joinUs:hover {
     flex-wrap: wrap;
   }
 }
+@media ( max-width: 600px) {
+  .howSection {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 .img3 {
   background-image: url(../img/motherHelpingSon.jpg);
   height: 35vw;
   margin-bottom: 5%;
 }
+@media ( max-width: 800px) {
+  .img3 {
+    display: none;
+  }
+}
 #chartdiv {
   width: 100vw;
   height: 30vw;
   background-color: #FFFFFF;
+}
+@media ( max-width: 800px) {
+  #chartdiv {
+    display: none;
+  }
 }
 .spaceFiller2 {
   padding-bottom: 6%;
@@ -340,6 +457,12 @@ main #joinUs:hover {
   .testimonials {
     font-size: 6vw;
     margin: 5% 30vw;
+  }
+}
+@media ( max-width: 600px) {
+  .testimonials {
+    font-size: 7.5vw;
+    margin: 5% 25vw;
   }
 }
 .quotes {
@@ -362,6 +485,11 @@ main #joinUs:hover {
     font-size: 4vw;
   }
 }
+@media ( max-width: 600px) {
+  .quotes div h2 {
+    font-size: 7vw;
+  }
+}
 .quotes div .fa-quote-left,
 .quotes div .fa-quote-right {
   color: black;
@@ -375,10 +503,21 @@ main #joinUs:hover {
     font-size: 2.5vw;
   }
 }
+@media ( max-width: 600px) {
+  .quotes div i {
+    font-size: 4.5vw;
+    margin: 4% 0%;
+  }
+}
 .quotes div img {
   border-radius: 50%;
   width: 15vw;
   border: 1px solid black;
+}
+@media ( max-width: 600px) {
+  .quotes div img {
+    width: 30vw;
+  }
 }
 .quotes div p {
   color: black;
@@ -393,9 +532,19 @@ main #joinUs:hover {
     font-size: 2.7vw;
   }
 }
+@media ( max-width: 600px) {
+  .quotes div p {
+    font-size: 5.7vw;
+  }
+}
 @media ( max-width: 1000px) {
   .quotes div #firstP {
     padding-bottom: 27.5vw;
+  }
+}
+@media ( max-width: 600px) {
+  .quotes div #firstP {
+    padding-bottom: 0;
   }
 }
 @media ( max-width: 1000px) {
@@ -404,10 +553,21 @@ main #joinUs:hover {
     width: 40%;
   }
 }
+@media ( max-width: 600px) {
+  .quotes div {
+    width: 80%;
+  }
+}
 @media ( max-width: 1000px) {
   .quotes {
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+@media ( max-width: 600px) {
+  .quotes {
+    flex-direction: column;
+    align-items: center;
   }
 }
 .contactUs {
@@ -422,6 +582,7 @@ main #joinUs:hover {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100vw;
   font-size: 1.3vw;
   padding: 0% 10%;
@@ -442,6 +603,11 @@ header img:hover {
   background-color: lightgray;
   transition-duration: 0.3s;
 }
+@media ( max-width: 800px) {
+  header img {
+    width: 10vw;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -461,6 +627,17 @@ header nav a:hover {
   color: #fcc915;
   border-bottom: 1px solid black;
   transition-duration: 0.3s;
+}
+@media ( max-width: 800px) {
+  header nav {
+    padding: 3% 0%;
+  }
+}
+@media ( max-width: 600px) {
+  header nav {
+    width: 45%;
+    font-size: 4vw;
+  }
 }
 header .loginSignUp {
   display: flex;
@@ -496,9 +673,21 @@ header .loginSignUp #signupButton:hover {
   background-color: lightblue;
   transition-duration: 0.5s;
 }
+@media ( max-width: 600px) {
+  header .loginSignUp {
+    width: 15%;
+    margin-left: 10vw;
+    font-size: 4vw;
+  }
+}
 @media ( max-width: 1000px) {
   header {
     font-size: 2.5vw;
+  }
+}
+@media ( max-width: 600px) {
+  header {
+    padding: 1vw;
   }
 }
 footer {
@@ -520,6 +709,13 @@ footer h2 {
     font-size: 2.2vw;
   }
 }
+@media ( max-width: 600px) {
+  footer h2 {
+    margin: auto;
+    padding: 3.5% 1.5%;
+    font-size: 3.2vw;
+  }
+}
 .footerDiv {
   display: flex;
   flex-direction: column;
@@ -536,11 +732,13 @@ footer h2 {
     font-size: 4.2vw;
   }
 }
-.footerAbout {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10vw;
+@media ( max-width: 600px) {
+  .footerDiv {
+    font-size: 6.2vw;
+    margin: 2% 0%;
+    margin-right: 17vw;
+    margin-bottom: 5vw;
+  }
 }
 .formCont {
   font-size: 2.5vw;
@@ -559,7 +757,6 @@ footer h2 {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  font-size: 1.2vw;
 }
 .formCont input[type=submit] {
   background-color: gold;
@@ -585,6 +782,11 @@ footer h2 {
   margin-top: 10%;
   font-size: 3.5vw;
 }
+@media ( max-width: 600px) {
+  .ourTeam {
+    margin-top: 10%;
+  }
+}
 .aboutUs {
   display: flex;
   justify-content: space-evenly;
@@ -604,13 +806,18 @@ footer h2 {
     width: 15vw;
   }
 }
+@media ( max-width: 600px) {
+  .aboutUs div img {
+    width: 35vw;
+  }
+}
 .aboutUs div h2 {
   font-size: 2.5vw;
   font-weight: bold;
 }
-@media ( max-width: 1000px) {
+@media ( max-width: 600px) {
   .aboutUs div h2 {
-    font-size: vw;
+    font-size: 5vw;
   }
 }
 .aboutUs div h3 {
@@ -622,9 +829,20 @@ footer h2 {
     font-size: 2.4vw;
   }
 }
+@media ( max-width: 600px) {
+  .aboutUs div h3 {
+    font-size: 5vw;
+  }
+}
 @media ( max-width: 1000px) {
   .aboutUs {
     width: 60vw;
     margin: 5% 20%;
+  }
+}
+@media ( max-width: 600px) {
+  .aboutUs {
+    flex-direction: column;
+    align-items: center;
   }
 }
