@@ -3,6 +3,7 @@
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100vw;
     font-size: 1.3vw;
     padding: 0% 10%;
@@ -23,7 +24,11 @@ header {
             background-color: lightgray;
             transition-duration: 0.3s;
         }
-    }
+
+        @media @medium {
+            width: 10vw;
+        }
+    }//closes img
 
     nav {
         display: flex;
@@ -45,6 +50,14 @@ header {
                 border-bottom: 1px solid black;
                 transition-duration: 0.3s;
             }
+        }
+
+        @media @medium {
+            padding: 3% 0%;
+        }
+        @media @mobile {
+            width: 45%;
+            font-size: 4vw;
         }
     }//closes nav
 
@@ -86,5 +99,18 @@ header {
                 transition-duration: 0.5s;
             }
         }//closes #signupButton
+
+        @media @mobile {
+            width: 15%;
+            margin-left: 10vw;
+            font-size: 4vw;
+        }
     }//closes .loginSignUp
-}//closes .navDiv
+
+    @media @tablet {
+        font-size: 2.5vw;
+    }
+    @media @mobile {
+        padding: 1vw;
+    }
+}//closes header

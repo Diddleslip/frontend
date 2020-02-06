@@ -2,11 +2,12 @@
 
 .customButton(@bg-color:gold, @width:200px, @font-color:black){
     background-color: @bg-color;
+    border: 1px solid black;
     cursor: pointer;
     text-align: center;
     width: @width;
     padding: 1%; 
-    border-radius: 10px;
+    border-radius: 5px;
     color:@font-color;
     white-space: nowrap;
     text-decoration: none;
@@ -19,3 +20,9 @@
     }
 }
 
+
+// Media Query Mixins
+
+@tablet: ~"( max-width: 1000px)";
+@medium: ~"( max-width: 800px)";
+@mobile: ~"( max-width: 600px)";

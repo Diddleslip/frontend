@@ -3,14 +3,15 @@
 main {
     display: flex;
     justify-content: center;
-    margin-top: 8%;
+    margin-top: 7%;
 
-    img {
-        background-image: url(img/kidsSmiling.jpg);
-        background-repeat: no-repeat;
-        background-attachment: scroll;
+    .img5 {
+        background-image: url(../img/backgroundImage.jpg); //solution 1 upvotes 30 WORKED!
+        background-attachment: fixed;
+        background-size: cover;
+        height: 40vw;
+        margin-bottom: -3%;
         width: 100vw;
-        margin-bottom: -10%;
     }
 
     .hookP {
@@ -19,23 +20,43 @@ main {
         margin-left: -90%;
         font-size: 2.5vw;
         width: 30%;
-        background: white;
+        background:@grayBackground;
+        border: 1px solid @grayBorder;
         opacity: .9;
-        color: gold;
+        color: #e6c300;
         text-size-adjust: auto;
         padding: 1%;
+        border-radius: 2px;
 
+
+        @media @tablet {
+            font-size: 3.5vw;
+        }
+        @media @medium {
+            font-size: 4vw;
+            padding: 2%;
+            margin-left: -75%;
+            width: 50%;
+        }
+        @media @mobile {
+            margin-top: 7.5%;
+        }
     }
 
     #joinUs {
         margin-top: 20%;
         font-size: 3vw;
-        color: floralwhite;
-        border-radius: 5px;
-        width: 20%;
-        margin-left: -90%;
 
-        .customButton(@bg-color: gold; @width: 30%; @font-color: white;)
+        .customButton(@bg-color: gold; @width: 30%; @font-color: white;);
+
+        @media @tablet {
+            margin-top: 28vw;
+        }
+        @media @medium {
+            font-size: 3.5vw;
+            width: 50%;
+            padding: 1.5%;
+        }        
     }
 }//closes main
 
@@ -44,7 +65,7 @@ main {
     flex-direction: column;
     margin: 0% 3%;
     padding: 3%;
-    border: 1px solid black;
+    border: 1px solid @grayBorder;
     align-items: center;
     background-color:gold;
     opacity: .9;
@@ -52,17 +73,44 @@ main {
 
     h1 {
         padding: 1% 0%;
-        font-size: 2vw;
+        font-size: 3.2vw;
         color: black;
         border-bottom: 1px solid black;
-        width: 25%;
+        width: 35%;
+
+        @media @tablet {
+            width: 50%;
+            font-size: 4vw;
+        }
+        @media @medium {
+            width: 50%;
+            font-size: 4.5vw;
+        }
+        @media @mobile {
+            font-size: 5vw;
+            width: 60%;
+        }
     }
 
     p {
         margin: 2% auto;
-        font-size: 1.2vw;
+        font-size: 2vw;
         width: 75%;
+
+        @media @tablet {
+            width: 90%;
+            font-size: 2.5vw;
+        }
+        @media @medium {
+            font-size: 3.2vw;
+            width: 100%;
+        }
+        @media @mobile {
+            font-size: 4vw;
+            width: 100%;
+        }
     }
+
 
 }//closes .getSetup
 
@@ -72,6 +120,14 @@ main {
     background-size: cover;
     height: 40vw;
     margin-bottom: -3%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    @media @medium {
+        background-attachment: scroll;
+    }
 }
 
 .spaceFiller {
@@ -88,6 +144,18 @@ main {
     margin-top: 7%;
     font-size: 2.7vw;
     font-weight: bold;
+
+    @media @tablet {
+        font-size: 3.5vw;
+    }
+    @media @medium {
+        font-size: 4.5vw;
+    }
+    @media @mobile {
+        font-size: 5.5vw;
+        margin-top: 12%;
+        margin-bottom: 10%;
+    }
 }
 
 .howSection {
@@ -101,29 +169,93 @@ main {
 
         i {
             margin-bottom: 5%;
+
+            @media @mobile {
+                font-size: 6vw;
+                align-items: center;
+                margin-bottom: 3%;
+            }
         }
 
         h2 {
             font-size: 2.2vw;
             font-weight: lighter;
             color: gold;
+
+            @media @tablet {
+                font-size: 3vw;
+            }
+            @media @medium {
+                font-size: 4vw;
+            }
+            @media @mobile {
+                font-size: 6vw;
+            }
+        }
+
+        #easyDataP {
+
+            @media @medium {
+                padding-bottom: 13.5vw;
+            }
         }
 
         p {
-            font-size: 1.5vw;
+            font-size: 1.6vw;
+            margin: 2%;
+            padding: 5%;
+            background: @grayBackground;
+            border: 1px solid @grayBorder;
+
+            @media @tablet {
+                font-size: 2.2vw;
+            }
+            @media @medium {
+                font-size: 3vw;
+            }
+            @media @mobile {
+                font-size: 4.2vw;
+                margin-bottom: 10%;
+            }
+        }
+
+        @media @tablet {
+            width: 40%;
+            margin: 2%;
+        }
+        @media @mobile {
+            width: 100%;
+            margin: 0%;
         }
     }//closes div
+
+    @media @tablet {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }//closes .howSection
 
 .img3 {
     background-image: url(../img/motherHelpingSon.jpg); //solution 3 upvotes 5
     height: 35vw;
     margin-bottom: 5%;
+
+    @media @medium {
+        display: none;
+    }
 }
 
     #chartdiv {
         width: 100vw; height: 30vw; background-color: #FFFFFF;
-        // display: none;
+        
+        @media @medium {
+            display: none;
+        }
     }
 
 .spaceFiller2 {
@@ -141,21 +273,38 @@ main {
     margin: 5% 35vw;
     padding-bottom: 1%;
     border-bottom: 5px solid gold;
+
+    @media @tablet {
+        font-size: 6vw;
+        margin: 5% 30vw;
+    }
+    @media @mobile {
+        font-size: 7.5vw;
+        margin: 5% 25vw;
+    }
 }
 
 .quotes {
     display: flex;
     justify-content: space-between;
-    margin: 5% 5%;
+    margin: auto;
+    border-bottom: 1px solid black;
 
     div {
-
+        margin: 5% 5%;
         width: 31%;
 
         h2 {
             color: gray;
             margin: 3%;
             font-size: 2.5vw;
+
+            @media @tablet {
+                font-size: 4vw;
+            }
+            @media @mobile {
+                font-size: 7vw;
+            }
         }
 
         .fa-quote-left, .fa-quote-right {
@@ -165,6 +314,14 @@ main {
         i {
             font-size: 1.5vw;
             color: gold;
+
+            @media @tablet {
+                font-size: 2.5vw;
+            }
+            @media @mobile {
+                font-size: 4.5vw;
+                margin: 4% 0%;
+            }
         }
 
 
@@ -172,21 +329,63 @@ main {
             border-radius: 50%;
             width: 15vw;
             border: 1px solid @test;
+
+            @media @mobile {
+                width: 30vw;
+            }
         }
 
         p {
             color: black;
             margin: 3%;
             padding: 5%;
-            font-size: 1vw;
+            font-size: 1.5vw;
             background-color: #f4f4f4; 
             border: 1px solid @grayBorder;
+
+            @media @tablet {
+                font-size: 2.7vw;
+            }
+            @media @mobile {
+                font-size: 5.7vw;
+            }
         }
-    }    
+
+        #firstP {
+
+            @media @tablet {
+                padding-bottom: 27.5vw;
+            }
+            @media @mobile {
+                padding-bottom: 0;
+            }
+        }
+
+        @media @tablet {
+            flex-wrap: wrap;
+            width: 40%;
+        }
+        @media @mobile {
+            width: 80%;
+        }
+    }//closes div    
+
+    @media @tablet {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+    }
 }//closes .quotes
 
 .contactUs {
+    margin: 0% 35%;
+    padding: 1% 0%;
     margin-top: 10%;
-    color: gold;
+    color: black;
     font-size: 3vw;
+    background: @grayBackground;
+    border: 1px solid @grayBorder
 }

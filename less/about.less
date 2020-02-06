@@ -3,6 +3,10 @@
 .ourTeam {
     margin-top: 10%;
     font-size: 3.5vw;
+
+    @media @mobile {
+        margin-top: 10%;
+    }
 }
 
 .aboutUs {
@@ -16,17 +20,45 @@
         margin: 2% 0%;
 
         img {
-            margin: 2% 0%;
+            margin: 5% 0%;
             width: 10vw;
+
+            @media @tablet {
+                width: 15vw;
+            }
+            @media @mobile {
+                width: 35vw;
+            }
         }
 
         h2 {
             font-size: 2.5vw;
+            font-weight: bold;
+
+            @media @mobile {
+                font-size: 5vw;
+            }
         }
 
         h3 {
-            margin: 2% 0%;
+            margin: 5% 0%;
             font-size: 1.8vw;
+
+            @media @tablet {
+                font-size: 2.4vw;
+            }
+            @media @mobile {
+                font-size: 5vw;
+            }
         }
     }//closes div
+
+    @media @tablet {
+        width: 60vw;
+        margin: 5% 20%;
+    }
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+    }
 }//closes .aboutUs
