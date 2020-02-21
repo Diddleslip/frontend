@@ -594,6 +594,9 @@ header {
   top: 0;
   background-color: white;
 }
+header .hidden {
+  text-indent: -5000px;
+}
 header img {
   margin-top: 2%;
   width: 5vw;
@@ -728,13 +731,12 @@ footer h2 {
   color: gold;
 }
 @media ( max-width: 1000px) {
-  .footerDiv {
-    font-size: 4.2vw;
+  .footerDiv a {
+    font-size: 8vw;
   }
 }
 @media ( max-width: 600px) {
   .footerDiv {
-    font-size: 6.2vw;
     margin: 2% 0%;
     margin-right: 17vw;
     margin-bottom: 5vw;
